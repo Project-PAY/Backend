@@ -1,0 +1,14 @@
+{
+  "name": "PAY",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn tsc && node dist"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.6.2"
+  }
+}
