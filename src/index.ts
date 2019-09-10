@@ -1,10 +1,17 @@
-let Hapi = require('hapi');
+import * as Hapi from "hapi";
+import Router from "../router";
 
-let server = new Hapi.Server({
-  host: 'localhost',
-  port: 8000
-});
+const init = async () => {
+  
+  const server: Hapi.Server = new Hapi.Server({
+    host: 'localhost',
+    port: 8000
+  });
 
-server.start(() => {
-  console.log(`PAY server is running in ${server.info.uri}:${server.info.port}`)
-})
+  await server.start();
+  console.log(`PAY Server is Running on ${server.info.port} port`)
+
+  Router(server);
+}
+
+init();

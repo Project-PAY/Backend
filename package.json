@@ -7,6 +7,11 @@
     "start": "yarn tsc && node dist"
   },
   "dependencies": {
+    "@hapi/bell": "^10.1.1",
+    "@hapi/hapi": "^18.3.2",
+    "@types/hapi": "^18.0.2",
+    "@types/node": "^12.7.4",
+    "bell": "^10.0.0",
     "global": "^4.4.0",
     "tsc": "^1.20150623.0",
     "typescript": "^3.6.2"
